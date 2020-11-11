@@ -1,0 +1,175 @@
+﻿#Main {
+    width: 75%;
+    height: 1500px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+#LetNav {
+    width: 75px;
+    height: 250px;
+    background-color: white;
+    position: fixed;
+    top: 20%;
+    left: 7%;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+    #LetNav ul {
+        width: 100%;
+        height: 100%
+    }
+
+        #LetNav ul li {
+            list-style: none;
+            text-align: center;
+            height: 25%;
+        }
+
+            #LetNav ul li a {
+                font-size: 14px;
+                text-decoration: none;
+                color: #3c3c3c;
+                line-height: 62px;
+            }
+
+            #LetNav ul li:hover {
+                background-color: #D60808;
+            }
+
+                #LetNav ul li:hover a {
+                    color: white;
+                }
+
+#RotationChart {
+    width: 100%;
+    height: 320px;
+}
+
+#RotationChart_img {
+    width: 100%;
+    height: 100%;
+}
+
+    #RotationChart_img .imga {
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    #RotationChart_img .active {
+        display: block;
+    }
+
+#RotationChart_title {
+    height: 16px;
+    border-radius: 30px;
+    float: left;
+    margin-top: -22px;
+    margin-left: 94.6%;
+    padding: 6px 0px 0px 10px;
+    position: relative;
+}
+
+    #RotationChart_title .nr {
+        list-style: none;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50%;
+        float: left;
+        margin-right: 10px;
+    }
+
+        #RotationChart_title .nr:hover {
+            cursor: pointer;
+        }
+
+    #RotationChart_title .active {
+        background: #D60808;
+    }
+
+#Modules {
+    margin-top: 10px;
+}
+
+.ShowModules {
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.Modules_title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Mone {
+    height: 150px;
+}
+
+.ShowModules_parts {
+    width: 100%;
+    height: 109px;
+    margin-top: 10px;
+}
+
+.ShowModules_lists {
+    width: 100%;
+    height: 100%;
+}
+
+.ShowModules_lists_items {
+    list-style: none;
+    float: left;
+    width: 213.5px;
+    height: 100%;
+    background-color: black;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.ShowModules_lists_info {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+    .ShowModules_lists_info a {
+        color: white;
+        display: block;
+    }
+
+.info_title{
+    font-size:16px;
+}
+
+.info_content{
+    margin:2px 0;
+}
+
+.info_more {
+    float: right;
+    margin-top:15px;
+    opacity: 0.75;
+}
+
+.info_title, .info_content, .info_more {
+    position: relative;
+    top: 20%;
+}
+
+    .info_content, .info_more{
+        font-size:14px;
+    }
+
+    .ShowModules_lists_items:hover .info_more, .info_more:hover {
+        opacity: 1;
+    }
+
+.Last_one {
+    margin-right: 0px;
+}

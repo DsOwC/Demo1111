@@ -1,0 +1,131 @@
+﻿#Main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#LeftPart {
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: blue;
+}
+
+#MainPart {
+    width: 85%;
+    height: 100%;
+    float: left;
+}
+
+#msgList {
+    width: 100%;
+    height: 100%;
+}
+
+#msgListArea {
+    width: 100%;
+    height: 75%;
+    box-sizing:border-box;
+    padding:5px;
+    background-color: #ececec;
+    overflow: auto;
+}
+
+#msgListSenPatr {
+    width: 100%;
+    height: 25%;
+    border-top: 1px solid gray;
+    text-align: right;
+    background-color: white;
+}
+
+#msgListSenPatrHeadFunction {
+    width: 100%;
+    height: 45px;
+}
+
+    #msgListSenPatrHeadFunction ul {
+        width: 100%;
+        height: 100%;
+    }
+
+        #msgListSenPatrHeadFunction ul li {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: red;
+            list-style: none;
+            float: left;
+            margin: 5px;
+        }
+
+#msgListSenPatrHeadArea {
+    height: 135px;
+    padding: 5px;
+}
+
+#Smsg {
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+
+#Sname {
+    height: 19px;
+    padding: 0 3px;
+}
+
+#SendBtn {
+    width: 88px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.NodeWriterR {
+    text-align: right;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.NodeMsgR {
+    font-size: 14px;
+    display: block;
+    word-break: break-all;
+    float: right;
+    margin-right: 5px;
+    max-width: 90%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 2px 8px;
+    background-color: white;
+}
+
+.NodeWriterL {
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.NodeMsgL {
+    font-size: 14px;
+    display: block;
+    word-break: break-all;
+    float: left;
+    margin-left: 5px;
+    max-width: 90%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 2px 8px;
+    background-color: white;
+}
+
+.NodeForm {
+    margin-bottom: 5px;
+    overflow: hidden;
+}

@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/css/All.css" rel="stylesheet" />
+    <link href="~/css/ChatingPageMain.css" rel="stylesheet" />
+    <title>ChatingPage</title>
+</head>
+<body>
+    <div id="BigBox">
+        <div id="Main">
+            <div id="LeftPart">
+
+            </div>
+            <div id="MainPart">
+                <div id="msgList">
+                    <div id="msgListArea">
+
+                    </div>
+                    <div id="msgListSenPatr">
+                        <div id="msgListSenPatrHead">
+                            <div id="msgListSenPatrHeadFunction">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div id="msgListSenPatrHeadArea">
+                                <textarea id="Smsg"></textarea>
+                            </div>
+                        </div>
+                        <div id="msgListSenPatrBottom">
+                            <span>UserName：</span>
+                            <input type="text" id="Sname" />
+                            <input type="button" id="SendBtn" value="发送" onclick="SendMMMMMsg()" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/dist/browser/signalr.min.js"></script>
+    <script src="~/js/jquery-3.5.1.js"></script>
+    <script src="~/js/ChatingCode.js"></script>
+
+</body>
+</html>

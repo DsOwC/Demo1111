@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/css/All.css" rel="stylesheet" />
+    <link href="~/css/HeaderSty.css" rel="stylesheet" />
+    <link href="~/css/MainSty.css" rel="stylesheet" />
+    <link href="~/css/FooterSty.css" rel="stylesheet" />
+    <title>@ViewData["Title"] - WebChating</title>
+</head>
+<body>
+    <div id="BigBox">
+        <div id="Header">
+            <div id="nav">
+                <ul id="nav_ul">
+                    <li id="nav_ul_li_logo">
+                        <a href="#">
+                            <img src="~/img/Logo.png" title="首页" />
+                        </a>
+                    </li>
+                    <li class="nav_ul_li_left">
+                        <a href="#">主页</a>
+                    </li>
+                    <li class="nav_ul_li_left">
+                        <a href="#">下载</a>
+                    </li>
+                    <li class="nav_ul_li_left">
+                        <a href="#">问答</a>
+                    </li>
+                    <li class="nav_ul_li_left">
+                        <a href="#">VIP</a>
+                    </li>
+                    <li id="nav_ul_li_user">
+                        @Html.ActionLink("", "ChatingPage", "Home", null, new
+                   {
+                       @class = "UserIcon"
+                   })
+                    </li>
+                    <li class="nav_ul_li_right">
+                        <input type="button" id="Share_Btn" value="发布博客" />
+                    </li>
+                    <li class="nav_ul_li_right">
+                        <input id="Search_Input" placeholder="...搜索内容" />
+                        <input type="button" id="Search_Btn" value="搜索" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="Main">
+            <div id="LetNav">
+                <ul>
+                    <li>
+                        <a href="#">热门话题</a>
+                    </li>
+                    <li>
+                        <a href="#">热门文档</a>
+                    </li>
+                    <li>
+                        <a href="#">大佬问答</a>
+                    </li>
+                    <li>
+                        <a href="#">模块4</a>
+                    </li>
+                </ul>
+            </div>
+            @RenderBody()
+        </div>
+
+        <div id="Footer">
+            <div id="Footer_Content">
+                <p>
+                    Copyright©2020李李在目
+                    <br />
+                    Powered by .NET Core
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
